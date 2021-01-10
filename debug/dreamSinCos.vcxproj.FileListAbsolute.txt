@@ -1,0 +1,2 @@
+E:\CodeWork\QT\dreamSinCos\debug\dreamSinCos.exe
+E:\CodeWork\QT\dreamSinCos\debug\dreamSinCos.pdb

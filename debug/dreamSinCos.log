@@ -1,0 +1,3 @@
+﻿  exshow.cpp
+E:\CodeWork\QT\dreamSinCos\exshow.cpp(27,38): warning C4100: “m”: 未引用的形参
+  dreamSinCos.vcxproj -> E:\CodeWork\QT\dreamSinCos\debug\dreamSinCos.exe
