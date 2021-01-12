@@ -5,8 +5,7 @@
 ExShow::ExShow(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ExShow),
-    precision(100),
-    maxPot(0)
+    precision(100)
 {
     ui->setupUi(this);
 }
@@ -47,11 +46,25 @@ void ExShow::paintEvent(QPaintEvent* m)
     pPath.moveTo(board.LeftCentre);
 
     int chchePotsL = cachePots.length();
+    double maxPot = 0;
+
+    //find max point
+    for (int i = 0; i < chchePotsL; ++i)
+    {
+        double absPot = 0;
+        absPot = (cachePots.at(i) * 2) / 2;
+        if (absPot > maxPot)
+        {
+            maxPot = absPot;
+        }
+    }
+
+    //draw
     for (int i = 0; i < chchePotsL; ++i)
     {
         QPoint nextPot;
         nextPot.rx() = i + board.LeftCentre.x();
-        nextPot.ry() = board.LeftCentre.y() - cachePots.at(i) * (board.height / 2);
+        nextPot.ry() = board.LeftCentre.y() - (cachePots.at(i) / maxPot) * (board.height / 2);
         //qDebug() << nextPot;
         pPath.lineTo(nextPot);
     }

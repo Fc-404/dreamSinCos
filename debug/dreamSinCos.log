@@ -1,3 +1,9 @@
-﻿  exshow.cpp
-E:\CodeWork\QT\dreamSinCos\exshow.cpp(27,38): warning C4100: “m”: 未引用的形参
+﻿  Moc'ing exshow.h...
+  exshow.cpp
+  main.cpp
+  mainwindow.cpp
+E:\CodeWork\QT\dreamSinCos\mainwindow.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\CodeWork\QT\dreamSinCos\exshow.cpp(26,38): warning C4100: “m”: 未引用的形参
+  moc_exshow.cpp
+  moc_mainwindow.cpp
   dreamSinCos.vcxproj -> E:\CodeWork\QT\dreamSinCos\debug\dreamSinCos.exe

@@ -58,7 +58,6 @@ private:
     Ui::ExShow *ui;
     int precision;//精度
     QQueue<double> cachePots;//缓存点
-    double maxPot;//最大点
     Board board;//绘制面板信息
 
 private:
